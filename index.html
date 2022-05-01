@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="bg-wrap">
+        <div class="container">
+            <header>
+                <h1 class="main-title">
+                    СОБЕРИ КОЛЛЕКЦИЮ ИЗ 40 КНИГ
+                </h1>
+                <h1 class="main-title">
+                    ПОЛУЧИ <span class="red-title">НАГРАДУ</span> ОТ АДМИНА СЕРВЕРА <span class="blue-title">NFR DAYZ PVE</span>
+                </h1>
+                <h1 class="main-title count-title">
+                    СОБРАНО <span class="count-have-books">0</span> КНИГ
+                </h1>
+            </header>
+            <div class="books-grid">
+                
+            </div>
+            <div class="row">
+                <div class="col1">
+                    
+                    <h2 class="col-info"> 
+                      <i class="fa-solid fa-book"></i> Собранные книги
+                    </h2>
+                    <textarea class="have-books one-book" readonly> </textarea>
+                    <button class="write-have-btn" onclick="booksCopy('have')">Скопировать</button>
+                </div>
+                <div class="col2">
+                    <h2 class="col-info">
+                        <i class="fa-solid fa-magnifying-glass"></i> Не хватает
+                    </h2>
+
+                     <textarea class="need-books" readonly></textarea>
+                     <button class="write-need-btn" onclick="booksCopy('need')">Скопировать</button>
+                </div>
+                
+                 <div class="col3">
+                     <h2 class="col-info">
+                         <i class="fa-solid fa-right-left"></i> Избытки
+                     </h2>
+                     <textarea class="trade-books two-book" readonly></textarea>
+                     <button class="write-trade-btn" onclick="booksCopy('need')">Скопировать</button>
+                 </div>
+            </div>
+            <button class="clear">Сброс данных</button>
+        </div>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
